@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 import * as THREE from "three";
+import bg from "./images/bg.jpg";
 
 console.log(THREE);
 
@@ -13,7 +14,8 @@ const scene = new THREE.Scene();
 
 //BACKGROUND TEXTURE
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("./images/bg.jpg");
+//const bgTexture = textureLoader.load("./images/bg.jpg");
+const bgTexture = textureLoader.load(bg);
 scene.background = bgTexture;
 
 //SIZE
